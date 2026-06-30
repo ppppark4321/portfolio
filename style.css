@@ -54,8 +54,9 @@ nav a.active {
   border: none;
   background: #1a73e8;
   color: #ffffff;
-  font-size: 22px;
-  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 12px;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -150,6 +151,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
+  margin-bottom: 28px;
 }
 
 .card h3 {
@@ -185,6 +187,78 @@ h1 {
   padding: 4px 10px;
   border-radius: 999px;
   font-size: 14px;
+  font-weight: 700;
+}
+
+.survey-section {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.survey-copy {
+  max-width: 720px;
+  margin-bottom: 24px;
+}
+
+.survey-copy h2 {
+  margin-bottom: 10px;
+}
+
+.survey-copy p:last-child {
+  color: #5f6368;
+}
+
+.contact-form {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  padding: 14px 16px;
+  font: inherit;
+  color: #202124;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.16);
+}
+
+.contact-form button {
+  justify-self: start;
+  border: none;
+  border-radius: 6px;
+  background: #1a73e8;
+  color: #ffffff;
+  padding: 12px 20px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(26, 115, 232, 0.35);
+}
+
+.contact-form button:hover {
+  background: #1558b0;
+}
+
+.response-message {
+  display: none;
+  margin-top: 15px;
   font-weight: 700;
 }
 
@@ -231,5 +305,13 @@ footer {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .survey-section {
+    padding: 24px;
+  }
+
+  .contact-form button {
+    width: 100%;
   }
 }

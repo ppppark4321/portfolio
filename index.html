@@ -13,7 +13,7 @@
       <a href="index.html" class="active">About</a>
       <a href="activities.html">Activities</a>
     </nav>
-    <button class="menu-btn" type="button" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+    <button class="menu-btn" type="button" onclick="toggleMenu()" aria-label="Open menu">Menu</button>
   </header>
 
   <main class="container">
@@ -58,10 +58,35 @@
         <p>My goal is to become a frontend developer who writes clean code, keeps learning, and builds websites that make a positive impact.</p>
       </div>
     </section>
+
+    <section class="survey-section">
+      <div class="survey-copy">
+        <p class="eyebrow">AI Survey Service</p>
+        <h2>AI 설문서비스</h2>
+        <p>
+          궁금한 내용을 남겨주시면 AI 에이전트가 질문을 분석하고,
+          입력하신 이메일로 답변을 보낼 수 있도록 접수합니다.
+        </p>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="visitorName" placeholder="이름" required />
+        <input type="email" id="visitorEmail" placeholder="이메일" required />
+        <textarea
+          id="visitorMessage"
+          placeholder="AI 에이전트에게 할 질문을 입력하세요"
+          required
+        ></textarea>
+
+        <button type="submit">AI 에이전트에게 질문하기</button>
+      </form>
+
+      <div id="responseMessage" class="response-message"></div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2026 Parkjungho. All rights reserved.</p>
+    <p>&copy; 2026 Parkjungho. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
