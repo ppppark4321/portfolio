@@ -19,7 +19,7 @@ if (contactForm) {
     responseDiv.innerText =
       "AI 에이전트가 질문을 분석 중입니다... 잠시만 기다려주세요.";
 
-    const makeWebhookUrl = "https://hook.eu1.make.com/c9qygf3lw4lff39xn5169tdj4ep8r3dxhttps://hook.eu1.make.com/c9qygf3lw4lff39xn5169tdj4ep8r3dx";
+    const makeWebhookUrl = "efnuh3palqsgqalnwnn4xwm51g37vh5k@hook.eu1.make.com";
 
     try {
       const response = await fetch(makeWebhookUrl, {
